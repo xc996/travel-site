@@ -1,0 +1,51 @@
+/* CSS 变量与基础重置 */
+:root {
+  --sz-blue: #0078d4;
+  --sz-green: #2eb872;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --card: #f8fafc;
+  --border: #e5e7eb;
+  --shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+a { color: var(--sz-blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+html:not(.i18n-ready) [data-i18n] { visibility: hidden; }
+
+.container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 64px 0; }
+.lead { color: var(--muted); font-size: 1.1rem; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 16px; border-radius: 8px; border: 1px solid var(--border); cursor: pointer; transition: all .25s ease; }
+.btn-primary { background: var(--sz-blue); color: #fff; border-color: transparent; }
+.btn-primary:hover { filter: brightness(1.1); }
+.btn-ghost { background: transparent; color: var(--text); }
+
+.site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.85); backdrop-filter: saturate(180%) blur(10px); border-bottom: 1px solid var(--border); }
+.header-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+.logo { font-weight: 700; color: var(--text); }
+.site-nav { display: flex; gap: 16px; }
+.nav-toggle { display: none; }
+.lang-switch { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
+.divider { color: var(--border); }
+
+@media (max-width: 768px) {
+  .site-nav { position: absolute; left: 0; right: 0; top: 64px; background: #fff; border-bottom: 1px solid var(--border); display: none; flex-direction: column; padding: 12px 20px; }
+  .nav-toggle { display: inline-flex; }
+}
+
+.site-footer { border-top: 1px solid var(--border); padding: 32px 0; margin-top: 40px; color: var(--muted); }

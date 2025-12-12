@@ -1,0 +1,5 @@
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+
+.nav-enter { display: flex !important; animation: navIn .25s ease both; }
+@keyframes navIn { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: translateY(0); } }
+

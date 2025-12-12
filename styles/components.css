@@ -1,0 +1,10 @@
+.site-nav a { padding: 10px; border-radius: 8px; }
+.site-nav a:hover { background: #f1f5f9; }
+
+.hero-actions .btn { margin-right: 8px; }
+
+.fade-in { opacity: 0; transform: translateY(12px); animation: fadeInUp .6s ease .1s forwards; }
+
+.btn:focus { outline: 3px solid rgba(0,120,212,0.25); outline-offset: 2px; }
+
+.card { content-visibility: auto; contain-intrinsic-size: 200px; }

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>美食推荐 · 深圳旅游</title>
+    <script>
+      (function(){
+        var stored = localStorage.getItem('lang');
+        var nav = (navigator.language||'zh').toLowerCase();
+        var lang = stored ? stored : (nav.startsWith('zh') ? 'zh' : 'en');
+        document.documentElement.lang = lang;
+      })();
+    </script>
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script type="module" src="scripts/i18n.js" defer></script>
+    <script type="module" src="scripts/nav.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" data-i18n="nav.brand">深圳旅游</a>
+        <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="attractions.html" data-i18n="nav.attractions">景点介绍</a>
+          <a href="food.html" data-i18n="nav.food">美食推荐</a>
+          <a href="transport.html" data-i18n="nav.transport">交通指南</a>
+          <a href="tips.html" data-i18n="nav.tips">实用信息</a>
+        </nav>
+        <div class="lang-switch">
+          <button class="btn btn-ghost" data-lang="zh">中文</button>
+          <span class="divider">|</span>
+          <button class="btn btn-ghost" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container">
+        <h1 data-i18n="food.title">美食推荐</h1>
+        <div class="grid grid-3">
+          <article class="card">
+            <h3 data-i18n="food.items.changfen.title">肠粉</h3>
+            <p data-i18n="food.items.changfen.desc">广东经典小吃，软滑鲜香。</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="food.items.shahe.title">沙河粉</h3>
+            <p data-i18n="food.items.shahe.desc">米香浓郁，炒/汤皆宜。</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="food.items.seafood.title">海鲜</h3>
+            <p data-i18n="food.items.seafood.desc">临海之城，新鲜多样。</p>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-i18n="footer.copy">© 深圳旅游 · 2025</p>
+      </div>
+    </footer>
+  </body>
+  </html>

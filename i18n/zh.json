@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "brand": "深圳旅游",
+    "home": "首页",
+    "attractions": "景点介绍",
+    "food": "美食推荐",
+    "transport": "交通指南",
+    "tips": "实用信息"
+  },
+  "hero": {
+    "title": "发现深圳",
+    "subtitle": "现代与自然交织的活力之城",
+    "cta": "探索景点"
+  },
+  "overview": {
+    "title": "城市概览",
+    "desc": "深圳，改革开放的前沿，以创新科技与海滨风光闻名。",
+    "cards": {
+      "innovation": { "title": "创新科技", "desc": "全球科技企业汇聚，产业升级迅速。" },
+      "coast": { "title": "海滨风光", "desc": "深圳湾与海岸线勾勒城市天际。" },
+      "culture": { "title": "人文艺术", "desc": "设计之都，多元文化活力涌现。" }
+    }
+  },
+  "featured": {
+    "title": "特色推荐",
+    "items": {
+      "pingan": "平安金融中心",
+      "bridge": "深圳湾大桥",
+      "hqb": "华强北"
+    }
+  },
+  "footer": { "copy": "© 深圳旅游 · 2025" },
+  "attractions": {
+    "title": "景点介绍",
+    "tabs": { "natural": "自然", "cultural": "人文" },
+    "items": {
+      "dameisha": { "title": "大梅沙海滨公园", "desc": "碧海银沙，亲海休闲胜地。" },
+      "wutong": { "title": "梧桐山", "desc": "城市最高峰，徒步与观景。" },
+      "pingan": { "title": "平安金融中心", "desc": "摩天地标，城市天际线代表。" },
+      "oct": { "title": "华侨城创意园", "desc": "创意聚集地，艺术与咖啡的热土。" }
+    }
+  },
+  "food": {
+    "title": "美食推荐",
+    "items": {
+      "changfen": { "title": "肠粉", "desc": "广东经典小吃，软滑鲜香。" },
+      "shahe": { "title": "沙河粉", "desc": "米香浓郁，炒/汤皆宜。" },
+      "seafood": { "title": "海鲜", "desc": "临海之城，新鲜多样。" }
+    }
+  },
+  "transport": {
+    "title": "交通指南",
+    "items": {
+      "metro": { "title": "地铁", "desc": "覆盖全城，便捷高效。" },
+      "bus": { "title": "公交", "desc": "站点密集，通达各区。" },
+      "airport": { "title": "机场", "desc": "深圳宝安国际机场，连接全球。" }
+    }
+  },
+  "tips": {
+    "title": "实用信息",
+    "items": {
+      "weather": { "title": "天气", "desc": "亚热带季风气候，全年温暖多雨。" },
+      "currency": { "title": "货币", "desc": "人民币（CNY）；移动支付普及。" },
+      "emergency": { "title": "紧急电话", "desc": "报警110、急救120、火警119。" }
+    }
+  }
+}
+

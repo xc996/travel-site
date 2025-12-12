@@ -1,0 +1,34 @@
+.grid { display: grid; gap: 20px; }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 992px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid-3, .grid-2 { grid-template-columns: 1fr; } }
+
+.hero { position: relative; padding: 120px 0; overflow: hidden; }
+.hero-bg { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,120,212,0.35), rgba(46,184,114,0.25)), url('assets/images/hero.jpg') center/cover no-repeat; transform: translateZ(0); will-change: transform; }
+.hero-content { position: relative; z-index: 1; color: #0b1b2b; }
+.hero h1 { font-size: 2.8rem; margin: 0 0 12px; }
+.hero p { font-size: 1.2rem; color: var(--muted); margin: 0 0 24px; }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }
+.tabs { display: flex; gap: 8px; margin-bottom: 20px; }
+.tab { padding: 8px 12px; border: 1px solid var(--border); border-radius: 8px; background: #fff; cursor: pointer; }
+.tab.active { border-color: var(--sz-blue); color: var(--sz-blue); }
+
+.gallery { position: relative; --gap: 16px; }
+.gallery-track { display: grid; grid-auto-flow: column; grid-auto-columns: 70%; gap: var(--gap); overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 var(--gap); padding: 0 var(--gap); overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; mask-image: linear-gradient(to right, transparent 0, black 24px, black calc(100% - 24px), transparent 100%); }
+.gallery-track { scrollbar-width: none; }
+.gallery-track::-webkit-scrollbar { display: none; }
+.gallery-item { scroll-snap-align: start; position: relative; }
+.gallery-item img { width: 100%; height: auto; border-radius: 16px; aspect-ratio: 16/9; object-fit: cover; }
+.gallery-item figcaption { position: absolute; left: 16px; bottom: 16px; background: rgba(0,0,0,0.35); color: #fff; padding: 6px 10px; border-radius: 10px; backdrop-filter: blur(6px); }
+.gallery-controls { position: absolute; inset: 0; pointer-events: none; display: flex; align-items: center; justify-content: space-between; padding: 0 8px; }
+.gallery-controls .btn { pointer-events: auto; width: 36px; height: 36px; border-radius: 999px; background: rgba(255,255,255,0.85); backdrop-filter: blur(8px); box-shadow: var(--shadow); }
+.gallery-dots { position: absolute; left: 50%; bottom: 8px; transform: translateX(-50%); display: flex; gap: 6px; }
+.gallery-dots .dot { width: 8px; height: 8px; border-radius: 50%; background: #cbd5e1; }
+.gallery-dots .dot.active { background: var(--sz-blue); }
+
+@media (max-width: 768px) {
+  .gallery-track { grid-auto-columns: 90%; }
+}

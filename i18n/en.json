@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "brand": "Shenzhen Travel",
+    "home": "Home",
+    "attractions": "Attractions",
+    "food": "Food",
+    "transport": "Transport",
+    "tips": "Tips"
+  },
+  "hero": {
+    "title": "Discover Shenzhen",
+    "subtitle": "A vibrant city of modernity and nature",
+    "cta": "Explore Attractions"
+  },
+  "overview": {
+    "title": "City Overview",
+    "desc": "Shenzhen, forefront of reform, renowned for tech and coastline.",
+    "cards": {
+      "innovation": { "title": "Innovation", "desc": "Global tech hub with rapid upgrades." },
+      "coast": { "title": "Coastal Views", "desc": "Shenzhen Bay sketches the skyline." },
+      "culture": { "title": "Culture & Arts", "desc": "Design city with diverse vitality." }
+    }
+  },
+  "featured": {
+    "title": "Featured",
+    "items": {
+      "pingan": "Ping An Finance Center",
+      "bridge": "Shenzhen Bay Bridge",
+      "hqb": "Huaqiangbei"
+    }
+  },
+  "footer": { "copy": "© Shenzhen Travel · 2025" },
+  "attractions": {
+    "title": "Attractions",
+    "tabs": { "natural": "Natural", "cultural": "Cultural" },
+    "items": {
+      "dameisha": { "title": "Dameisha Beach Park", "desc": "Sea and sand, leisure by the coast." },
+      "wutong": { "title": "Wutong Mountain", "desc": "Highest peak, hiking and views." },
+      "pingan": { "title": "Ping An Finance Center", "desc": "Skyscraper symbol of the skyline." },
+      "oct": { "title": "OCT Creative Park", "desc": "Art and coffee in a creative hub." }
+    }
+  },
+  "food": {
+    "title": "Food",
+    "items": {
+      "changfen": { "title": "Rice Noodle Roll", "desc": "Cantonese classic, soft and savory." },
+      "shahe": { "title": "Shahe Noodles", "desc": "Rich rice flavor, stir-fry or soup." },
+      "seafood": { "title": "Seafood", "desc": "Coastal city with fresh variety." }
+    }
+  },
+  "transport": {
+    "title": "Transport",
+    "items": {
+      "metro": { "title": "Metro", "desc": "Covers the city, efficient and fast." },
+      "bus": { "title": "Bus", "desc": "Dense stops, reach all districts." },
+      "airport": { "title": "Airport", "desc": "Shenzhen Bao'an International connects worldwide." }
+    }
+  },
+  "tips": {
+    "title": "Practical Tips",
+    "items": {
+      "weather": { "title": "Weather", "desc": "Subtropical monsoon, warm and rainy year-round." },
+      "currency": { "title": "Currency", "desc": "CNY; mobile payments are ubiquitous." },
+      "emergency": { "title": "Emergency", "desc": "Police 110, Ambulance 120, Fire 119." }
+    }
+  }
+}
+

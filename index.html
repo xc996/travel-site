@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>深圳旅游 · Shenzhen Travel</title>
+    <meta name="description" content="深圳旅游指南：城市概览、景点、美食、交通与实用信息。" />
+    <script>
+      (function(){
+        var stored = localStorage.getItem('lang');
+        var nav = (navigator.language||'zh').toLowerCase();
+        var lang = stored ? stored : (nav.startsWith('zh') ? 'zh' : 'en');
+        document.documentElement.lang = lang;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <script type="module" src="scripts/i18n.js" defer></script>
+    <script type="module" src="scripts/parallax.js" defer></script>
+    <script type="module" src="scripts/gallery.js" defer></script>
+    <script type="module" src="scripts/nav.js" defer></script>
+    <script type="module" src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" data-i18n="nav.brand">深圳旅游</a>
+        <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html" data-i18n="nav.home">首页</a>
+          <a href="attractions.html" data-i18n="nav.attractions">景点介绍</a>
+          <a href="food.html" data-i18n="nav.food">美食推荐</a>
+          <a href="transport.html" data-i18n="nav.transport">交通指南</a>
+          <a href="tips.html" data-i18n="nav.tips">实用信息</a>
+        </nav>
+        <div class="lang-switch">
+          <button class="btn btn-ghost" data-lang="zh">中文</button>
+          <span class="divider">|</span>
+          <button class="btn btn-ghost" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" data-parallax="0.25">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+          <h1 data-i18n="hero.title">发现深圳</h1>
+          <p data-i18n="hero.subtitle">现代与自然交织的活力之城</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="attractions.html" data-i18n="hero.cta">探索景点</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="overview">
+        <div class="container">
+          <h2 data-i18n="overview.title">城市概览</h2>
+          <p class="lead" data-i18n="overview.desc">深圳，改革开放的前沿，以创新科技与海滨风光闻名。</p>
+          <div class="grid grid-3">
+            <article class="card fade-in">
+              <h3 data-i18n="overview.cards.innovation.title">创新科技</h3>
+              <p data-i18n="overview.cards.innovation.desc">全球科技企业汇聚，产业升级迅速。</p>
+            </article>
+            <article class="card fade-in">
+              <h3 data-i18n="overview.cards.coast.title">海滨风光</h3>
+              <p data-i18n="overview.cards.coast.desc">深圳湾与海岸线勾勒城市天际。</p>
+            </article>
+            <article class="card fade-in">
+              <h3 data-i18n="overview.cards.culture.title">人文艺术</h3>
+              <p data-i18n="overview.cards.culture.desc">设计之都，多元文化活力涌现。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="featured">
+        <div class="container">
+          <h2 data-i18n="featured.title">特色推荐</h2>
+          <div class="gallery" aria-label="Featured Gallery">
+            <div class="gallery-track" tabindex="0">
+              <figure class="gallery-item">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%230078D4'/><stop offset='1' stop-color='%232EB872'/></linearGradient></defs><rect width='1200' height='800' fill='url(%23g)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Inter,Arial' font-size='56' font-weight='700'>Ping%20An%20Finance%20Center</text></svg>" alt="平安金融中心" loading="lazy" />
+                <figcaption data-i18n="featured.items.pingan">平安金融中心</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'><defs><linearGradient id='g2' x1='0' y1='1' x2='1' y2='0'><stop offset='0' stop-color='%232EB872'/><stop offset='1' stop-color='%230078D4'/></linearGradient></defs><rect width='1200' height='800' fill='url(%23g2)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Inter,Arial' font-size='56' font-weight='700'>Shenzhen%20Bay%20Bridge</text></svg>" alt="深圳湾大桥" loading="lazy" />
+                <figcaption data-i18n="featured.items.bridge">深圳湾大桥</figcaption>
+              </figure>
+              <figure class="gallery-item">
+                <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='800' viewBox='0 0 1200 800'><defs><linearGradient id='g3' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%230078D4'/><stop offset='1' stop-color='%232EB872'/></linearGradient></defs><rect width='1200' height='800' fill='url(%23g3)'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Inter,Arial' font-size='56' font-weight='700'>Huaqiangbei</text></svg>" alt="华强北科技街" loading="lazy" />
+                <figcaption data-i18n="featured.items.hqb">华强北</figcaption>
+              </figure>
+            </div>
+            <div class="gallery-controls">
+              <button class="btn btn-ghost prev" aria-label="Prev">◀</button>
+              <button class="btn btn-ghost next" aria-label="Next">▶</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p data-i18n="footer.copy">© 深圳旅游 · 2025</p>
+      </div>
+    </footer>
+  </body>
+  </html>
